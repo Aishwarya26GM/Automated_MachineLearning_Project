@@ -5,7 +5,7 @@ It cleans, preprocesses, and splits raw CSV datasets into structured
 data ready for model training.
 
 ## Project Structure
-
+```
 Automated_MachineLearning_Project/
 ├── ml_engine/
 │   ├── __init__.py
@@ -17,39 +17,50 @@ Automated_MachineLearning_Project/
 │   └── starbucks_customer_ordering_patterns.csv
 ├── test_processing.py
 └── .gitignore
+```
 
 ## How to Set Up
 
 Step 1 - Clone the repository
+```
 git clone https://github.com/Aishwarya26GM/Automated_MachineLearning_Project.git
 cd Automated_MachineLearning_Project
+```
 
 Step 2 - Create a virtual environment
+```
 python -m venv .venv
+```
 
 Step 3 - Activate the virtual environment
-On Windows:
+```
 .\.venv\Scripts\Activate.ps1
+```
 
 Step 4 - Install the required libraries
+```
 pip install -r requirements.txt
+```
 
 ## How to Run
-
+```
 python test_processing.py
+```
 
 ## How It Works
 
 The main function to call is:
-
+```
 processed_data = preprocess_dataset(dataset_path)
+```
 
 It returns the following:
-
+```
 X_train = processed_data["X_train"]
 X_test  = processed_data["X_test"]
 y_train = processed_data["y_train"]
 y_test  = processed_data["y_test"]
+```
 
 ## Error Handling
 
@@ -79,7 +90,7 @@ The module handles the following errors:
 - Do not modify the backend API files
 - Do not add model training logic in this module
 - Focus strictly on dataset preparation
-- Output structure must match exactly as defined above for smooth integration
+- Output structure must match exactly as defined above
 
 ## Project Lead and Mentor
 
