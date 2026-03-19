@@ -1,10 +1,11 @@
-# Automated Machine Learning Project
+# Data Preprocessing Module - Automated ML Platform
 
-This project is an automated machine learning pipeline that takes raw CSV datasets,
-preprocesses them, and prepares them for model training. Built as part of a learning project.
+This module handles dataset preparation for the Automated ML Platform.
+It cleans, preprocesses, and splits raw CSV datasets into structured
+data ready for model training.
 
 ## Project Structure
-```
+
 Automated_MachineLearning_Project/
 ├── ml_engine/
 │   ├── __init__.py
@@ -16,7 +17,6 @@ Automated_MachineLearning_Project/
 │   └── starbucks_customer_ordering_patterns.csv
 ├── test_processing.py
 └── .gitignore
-```
 
 ## How to Set Up
 
@@ -38,7 +38,29 @@ pip install -r requirements.txt
 
 python test_processing.py
 
-## Datasets Used
+## How It Works
+
+The main function to call is:
+
+processed_data = preprocess_dataset(dataset_path)
+
+It returns the following:
+
+X_train = processed_data["X_train"]
+X_test  = processed_data["X_test"]
+y_train = processed_data["y_train"]
+y_test  = processed_data["y_test"]
+
+## Error Handling
+
+The module handles the following errors:
+
+- Dataset file not found
+- Empty dataset
+- Missing target column
+- Invalid dataset format
+
+## Datasets Used for Testing
 
 - Credit Card Defaulter Prediction
 - Amazon Sales Dataset
@@ -49,4 +71,17 @@ python test_processing.py
 
 - Python 3.12
 - Pandas
+- NumPy
 - Scikit-learn
+
+## Notes
+
+- Do not modify the backend API files
+- Do not add model training logic in this module
+- Focus strictly on dataset preparation
+- Output structure must match exactly as defined above for smooth integration
+
+## Project Lead and Mentor
+
+Ritesh Bonthalakoti
+Team LearnDepth
