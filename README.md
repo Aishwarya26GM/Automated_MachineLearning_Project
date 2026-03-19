@@ -4,7 +4,7 @@ This project is an automated machine learning pipeline that takes raw CSV datase
 preprocesses them, and prepares them for model training. Built as part of a learning project.
 
 ## Project Structure
-
+```
 Automated_MachineLearning_Project/
 ├── ml_engine/
 │   ├── __init__.py
@@ -16,6 +16,7 @@ Automated_MachineLearning_Project/
 │   └── starbucks_customer_ordering_patterns.csv
 ├── test_processing.py
 └── .gitignore
+```
 
 ## How to Set Up
 
